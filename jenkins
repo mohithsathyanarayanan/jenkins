@@ -3,7 +3,7 @@ agent any
     stages {
         stage('Get repositery') {
             steps {
-                git 'https://github.com/mohithsathyanarayanan/jenkins'
+                git 'https://github.com/mohithsathyanarayanan/jenkins.git'
             }
         }
         stage('Source code') {
