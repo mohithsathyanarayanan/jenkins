@@ -9,12 +9,12 @@ agent any
         }
         stage('Run Code') {
             steps {
-                sh "/usr/bin/python3 add.py"
+                sh "/usr/bin/python3 /home/mohith/Downloads/add.py"
             }
         }
         stage('Test Code') {
             steps {
-                sh "/usr/bin/python3 test.py"
+                sh "/usr/bin/python3 /home/mohith/Downloads/test.py"
             }
         }
     }
