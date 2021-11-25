@@ -1,17 +1,17 @@
 pipeline { 
 agent any
     stages {
-        stage('Get repositery') {
+        stage('Clone Git Repository') {
             steps {
                 git 'https://github.com/mohithsathyanarayanan/jenkins.git'
             }
         }
-        stage('Source code') {
+        stage('Run Code') {
             steps {
                 sh "/usr/bin/python3 add.py"
             }
         }
-        stage('Testing phase') {
+        stage('Test Code') {
             steps {
                 sh "/usr/bin/python3 test.py"
             }
